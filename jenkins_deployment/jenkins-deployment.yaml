@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jenkins
+  namespace: master
   labels:
     app: jenkins
 spec:
@@ -18,4 +19,4 @@ spec:
         image: jenkins/jenkins:2.235.1-lts-alpine
         ports:
         - containerPort: 8080
-          protocol: TCP
+          protocol: TCP 

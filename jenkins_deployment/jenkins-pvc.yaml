@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: jenkins-pvc
+  namespace: master
+spec:
+  storageClassName: slow-jenkins-volume 
+  resources:
+    requests:
+      storage: 500MI
+  accessModes:
+    - ReadWriteOnce

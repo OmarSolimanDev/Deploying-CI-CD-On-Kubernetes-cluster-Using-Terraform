@@ -7,3 +7,4 @@ parameters:
   type: pd-standard # The type of disk that will be created [pd-standard or pd-ssd]
   fstype: ext4
   replication-type: none # low availablilty low cost when set to none
+reclaimPolicy: Delete

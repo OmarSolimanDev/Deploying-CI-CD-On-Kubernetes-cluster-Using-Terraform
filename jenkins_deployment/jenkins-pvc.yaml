@@ -4,9 +4,10 @@ metadata:
   name: jenkins-pvc
   namespace: master
 spec:
+  volumeMode: Filesystem
   storageClassName: slow-jenkins-volume 
   resources:
     requests:
-      storage: 500MI
+      storage: 1Gi
   accessModes:
     - ReadWriteOnce

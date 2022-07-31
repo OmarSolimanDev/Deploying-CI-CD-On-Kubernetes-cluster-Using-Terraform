@@ -58,7 +58,7 @@
     it to the bastion host while creating the bastion host from the terraform code
 11. Now copy the kubernetes yaml files found in templates folder from your local machine to your <br />
     bastion host, type in the terminal: <br />
-    `gcloud compute scp  --recurse ./Deployment-Templates  gke-bastion:~/ --project=omar-gcp-project-1` <br />
+    `gcloud compute scp --recurse ../jenkins_deployment gke-bastion:~/ --project=omar-gcp-project-1` <br />
     Note that: "gke-bastion" is the name of the bastion host
 12. Connect to your bastion host `gcloud compute ssh gke-bastion  --project=omar-gcp-project-1` <br />
     note that: there is no puplic ip added so gcloud will the IAP tunneling to reach <br />

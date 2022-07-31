@@ -14,18 +14,29 @@ spec:
     metadata:
       labels:
         app: jenkins
+    spec:
       containers:
       - name: jenkins
         image: jenkins/jenkins:2.60.3-alpine
+        imagePullPolicy: Always
+        env:
+        - name: JAVA_OPTS
+          value: -Xmx2048m -Dhudson.slaves.NodeProvisioner.MARGIN=50 -Dhudson.slaves.NodeProvisioner.MARGIN0=0.85
         ports:
         - containerPort: 8080
           protocol: TCP
         - containerPort: 50000
           protocol: TCP
+        securityContext:
+          allowPrivilegeEscalation: true
+          privileged: true
+          readOnlyRootFilesystem: false
+          runAsUser: 0
         volumeMounts:
         - mountPath: /var/jenkins_home
-          name: volume1          
+          name: volume1
+      restartPolicy: Always
       volumes:
       - name: volume1
         persistentVolumeClaim:
-          claimName: low-jenkins-volume  
+          claimName: jenkins-pvc

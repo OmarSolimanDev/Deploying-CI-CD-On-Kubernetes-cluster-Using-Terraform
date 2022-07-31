@@ -1,0 +1,9 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: slow-jenkins-volume
+provisioner: kubernetes.io/gce-pd
+parameters:
+  type: pd-standard # The type of disk that will be created [pd-standard or pd-ssd]
+  fstype: ext4
+  replication-type: none # low availablilty low cost when set to none

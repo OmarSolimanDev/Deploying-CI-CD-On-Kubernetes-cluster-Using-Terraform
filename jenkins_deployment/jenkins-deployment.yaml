@@ -16,7 +16,16 @@ spec:
         app: jenkins
       containers:
       - name: jenkins
-        image: jenkins/jenkins:2.235.1-lts-alpine
+        image: jenkins/jenkins:2.60.3-alpine
         ports:
         - containerPort: 8080
-          protocol: TCP 
+          protocol: TCP
+        - containerPort: 50000
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /var/jenkins_home
+          name: volume1          
+      volumes:
+      - name: volume1
+        persistentVolumeClaim:
+          claimName: low-jenkins-volume  

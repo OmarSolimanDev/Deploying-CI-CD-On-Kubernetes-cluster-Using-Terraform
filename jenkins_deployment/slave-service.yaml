@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins-front-service
+  name: jenkins-back-service
   namespace: master
 spec:
   selector:
     app: jenkins
-  type: LoadBalancer  
+  type: ClusterIP
   ports:
   - port: 8080
     targetPort: 8080

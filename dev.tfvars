@@ -1,0 +1,13 @@
+project_id               = "omar-gcp-project-1"
+gcp_credentials          = "/home/omar/.config/gcloud/application_default_credentials.json" #path to your credentials on your local machine
+region                   = "europe-west2"
+vpc_name                 = "terraform-vpc"
+managed_subnet_region    = "europe-west2"
+restricted_subnet_region = "europe-west2"
+managed_subnet_CIDR      = "10.0.1.0/24"
+restricted_subnet_CIDR   = "10.0.2.0/24"
+nat_name                 = "my-ngw"
+router_name              = "my-cloud-router"
+router_region            = "europe-west2"
+sa_id                    = "bastion-sa"
+sa_Dname                 = "Bastion service account"

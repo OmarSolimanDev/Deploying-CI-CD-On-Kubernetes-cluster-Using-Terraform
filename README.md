@@ -78,7 +78,7 @@
 12. Copy the  `External-ip:8080` address to your browser.<br />
 ![](./images/browser.png "testing")
 
-13. Now refer to the `README.md` file  inside thr `jenkins_deployment` directory to complete <br />
+13. Now refer to the `README.md` file  inside the `jenkins_deployment` directory to complete <br />
     the installation guide.
 
 ## Author

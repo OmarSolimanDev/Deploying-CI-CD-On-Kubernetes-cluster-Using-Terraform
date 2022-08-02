@@ -63,7 +63,7 @@
 
 7. Authenticate the kubectl with the gke cluster `gcloud container clusters get-credentials  my-gke-cluster `
     Note that: <br />
-    `my-gke-cluster` is the name of the cluster name 
+    `my-gke-cluster` is the name of the cluster 
 
 8. Change directory to `jenkins_deployment` by typing `cd ./jenkins_deployment`
 

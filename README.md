@@ -67,6 +67,8 @@
 
 8. Change directory to `jenkins_deployment` by typing `cd ./jenkins_deployment`
 
+13. Inside the bastion host create the namespace that jenkins will run on `kubectl create namespace`
+
 9. Now run the following command to start all deploymet and service files. `kubectl create -Rf .`<br />
 
 10. wait 1-2 minutes for the the jenkins pod to be running then run `kubectl get svc -n master`<br />

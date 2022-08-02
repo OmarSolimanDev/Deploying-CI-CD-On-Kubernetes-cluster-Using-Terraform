@@ -1,4 +1,4 @@
-# A CI/CD Pipeline on A GKE Cluster Using Terraform
+# A CI/CD Pipeline On A GKE Cluster Using Terraform
 
 ## Project's Description
 

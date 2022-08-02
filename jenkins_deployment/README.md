@@ -1,4 +1,4 @@
-# Jenkins n GKE Cluster
+# Jenkins On GKE Cluster
 
 installing `kubernetes-plugin` for Jenkins
 

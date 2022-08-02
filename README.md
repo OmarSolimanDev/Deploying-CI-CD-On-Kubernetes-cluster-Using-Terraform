@@ -2,7 +2,7 @@
 
 ## Project's Description
 
-- Project aim is to build a full CI/CD pipeline on GKE cluster
+- Project aim is to build a full CI/CD pipeline on a GKE cluster
 - Building a docker image from a nodejs application
 - Using Dockerhub as our image repository to push the image to it
 - Deploying the python application on a GKE cluster 

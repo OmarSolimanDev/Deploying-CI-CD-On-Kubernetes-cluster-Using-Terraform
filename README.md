@@ -70,7 +70,7 @@
 9. Inside the bastion host create the namespace that jenkins will run on `kubectl create namespace master`
 
 
-10. Inside the bastion host create the namespace that the deployed applicatiob will run on `kubectl create namespace dev`
+10. Inside the bastion host create the namespace that the deployed application will run on `kubectl create namespace dev`
 
 
 11. Now run the following command to start all deploymet and service files. `kubectl create -Rf .`<br />

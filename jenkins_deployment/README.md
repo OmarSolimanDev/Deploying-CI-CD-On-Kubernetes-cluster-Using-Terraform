@@ -112,9 +112,9 @@ withCredentials([
 
 - You can also find a `Dockerfile` to build image from the app
 
-- Also Deployment and service files that will be used to deploy the image created
+- Also Deployment and service files will be used to deploy the created image
 
 - on your bastion host run `kubectl get svc -n dev`
 
 - Copy the  `External-ip:80` address to your browser.<br />
-![](./images/browser.png "testing")
+<!-- ![](./images/browser.png "testing") -->
